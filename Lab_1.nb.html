@@ -215,9 +215,189 @@ pre code {
 
 
 <!-- rnb-text-begin -->
+<p>Registros de notas de 5 estudiantes: student_1 = { 50.4, 62.3, 92.1, 77.6, TRUE } student_2 = { 41.7, 87.9, 75.3, 72.4, FALSE } student_3 = { 30.3, 67.8, 69.3, 71.2, FALSE } student_4 = { 65.4, 85.1, 92.3, 96.8, TRUE } student_5 = { 70.4, 88.2, 95.2, 90.7, TRUE }</p>
+<p>Vectores y matrices: 1.1. Cree un vector por cada estudiante que almacene los 5 registros</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudF8xIDwtIGMoNTAuNCwgNjIuMywgOTIuMSwgNzcuNiwgVFJVRSlcbnN0dWRlbnRfMiA8LSBjKDQxLjcsIDg3LjksIDc1LjMsIDcyLjQsIEZBTFNFKVxuc3R1ZGVudF8zIDwtIGMoMzAuMywgNjcuOCwgNjkuMywgNzEuMiwgRkFMU0UpXG5zdHVkZW50XzQgPC0gYyg2NS40LCA4NS4xLCA5Mi4zLCA5Ni44LCBUUlVFKVxuc3R1ZGVudF81IDwtIGMoNzAuNCwgODguMiwgOTUuMiwgOTAuNywgVFJVRSlcblxuc3R1ZGVudF8xXG5zdHVkZW50XzJcbnN0dWRlbnRfM1xuc3R1ZGVudF80XG5zdHVkZW50XzVcblxuXG5cbmBgYCJ9 -->
+<pre class="r"><code>student_1 &lt;- c(50.4, 62.3, 92.1, 77.6, TRUE)
+student_2 &lt;- c(41.7, 87.9, 75.3, 72.4, FALSE)
+student_3 &lt;- c(30.3, 67.8, 69.3, 71.2, FALSE)
+student_4 &lt;- c(65.4, 85.1, 92.3, 96.8, TRUE)
+student_5 &lt;- c(70.4, 88.2, 95.2, 90.7, TRUE)
+
+student_1
+student_2
+student_3
+student_4
+student_5
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>1.2. Cree el vector students_vector, sus elementos serán cada uno de los vectores creados anteriormente</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudHNfdmVjdG9yIDwtIGMoc3R1ZGVudF8xLCBzdHVkZW50XzIsIHN0dWRlbnRfMywgc3R1ZGVudF80LCBzdHVkZW50XzUpXG5cbnN0dWRlbnRzX3ZlY3RvclxuXG5gYGAifQ== -->
+<pre class="r"><code>students_vector &lt;- c(student_1, student_2, student_3, student_4, student_5)
+
+students_vector
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Construya una matriz de nombre students_matrix que reciba como parámetro students_vector.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudHNfbWF0cml4IDwtIG1hdHJpeChzdHVkZW50c192ZWN0b3IsIG5yb3cgPSA1LCBieXJvdyA9IFRSVUUpXG5cbnN0dWRlbnRzX21hdHJpeFxuYGBgIn0= -->
+<pre class="r"><code>students_matrix &lt;- matrix(students_vector, nrow = 5, byrow = TRUE)
+
+students_matrix</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Nombrado de una matriz 2.1.Cree los vectores name_students y name_courses_legal_age con los siguientes valores: name_students = { “Lily Brown”, “Davis Moore”, “Susan Taylor”, “Mike Jones”, “Tom Hill” } name_courses_legal_age = { “TIC”, “Accounting”, “Psychology”, “Ethics”, “Legal_age” }</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5uYW1lX3N0dWRlbnRzIDwtIGMoXCJMaWx5IEJyb3duXCIsIFwiRGF2aXMgTW9vcmVcIiwgXCJTdXNhbiBUYXlsb3JcIiwgXCJNaWtlIEpvbmVzXCIsXCJUb20gSGlsbFwiKVxubmFtZV9jb3Vyc2VzX2xlZ2FsX2FnZSA8LSBjKFwiVElDXCIsIFwiQWNjb3VudGluZ1wiLCBcIlBzeWNob2xvZ3lcIiwgXCJFdGhpY3NcIiwgXCJMZWdhbF9hZ2VcIilcblxubmFtZV9zdHVkZW50c1xubmFtZV9jb3Vyc2VzX2xlZ2FsX2FnZVxuXG5gYGAifQ== -->
+<pre class="r"><code>
+name_students &lt;- c(&quot;Lily Brown&quot;, &quot;Davis Moore&quot;, &quot;Susan Taylor&quot;, &quot;Mike Jones&quot;,&quot;Tom Hill&quot;)
+name_courses_legal_age &lt;- c(&quot;TIC&quot;, &quot;Accounting&quot;, &quot;Psychology&quot;, &quot;Ethics&quot;, &quot;Legal_age&quot;)
+
+name_students
+name_courses_legal_age
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>2.2. Utilice estos vectores para crear el nombrado de filas y columnas de la matriz students_vector. En las filas deben aparecer los estudiantes y en columnas los cursos y si es mayor de edad.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sbmFtZXMoc3R1ZGVudHNfbWF0cml4KSA8LSBuYW1lX2NvdXJzZXNfbGVnYWxfYWdlXG5yb3duYW1lcyhzdHVkZW50c19tYXRyaXgpIDwtIG5hbWVfc3R1ZGVudHNcblxuc3R1ZGVudHNfbWF0cml4XG5cblxuYGBgIn0= -->
+<pre class="r"><code>colnames(students_matrix) &lt;- name_courses_legal_age
+rownames(students_matrix) &lt;- name_students
+
+students_matrix
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>RowSums, cbind</p>
+<p>3.1. Cree el vector total_grade_student que contenga la sumatoria de todas las notas por cada estudiante, utilice la función rowSum para hacerlo, tome en cuenta que solo debe considerar las primera 4 columnas, porque la última corresponde a la mayoría de edad.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudHNfbWF0cml4WzEsMTo0XVxuc3R1ZGVudHNfbWF0cml4WzIsMTo0XVxuc3R1ZGVudHNfbWF0cml4WzMsMTo0XVxuc3R1ZGVudHNfbWF0cml4WzQsMTo0XVxuc3R1ZGVudHNfbWF0cml4WzUsMTo0XVxuXG5zdHVkZW50c19tYXRyaXhbLDE6NF1cbnJvd1N1bXMoc3R1ZGVudHNfbWF0cml4WywxOjRdKVxuXG50b3RhbF9ncmFkZV9zdHVkZW50IDwtIHJvd1N1bXMoc3R1ZGVudHNfbWF0cml4WywxOjRdKVxuXG50b3RhbF9ncmFkZV9zdHVkZW50XG5gYGAifQ== -->
+<pre class="r"><code>students_matrix[1,1:4]
+students_matrix[2,1:4]
+students_matrix[3,1:4]
+students_matrix[4,1:4]
+students_matrix[5,1:4]
+
+students_matrix[,1:4]
+rowSums(students_matrix[,1:4])
+
+total_grade_student &lt;- rowSums(students_matrix[,1:4])
+
+total_grade_student</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>3.2. Pegue el vector total_grade_student con la matriz students_matrix por medio de la función cbind y asigne el resultado a una nueva matriz de nombre result_students.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVzdWx0X3N0dWRlbnRzIDwtIGNiaW5kKHN0dWRlbnRzX21hdHJpeCx0b3RhbF9ncmFkZV9zdHVkZW50KVxuXG5yZXN1bHRfc3R1ZGVudHNcbmBgYCJ9 -->
+<pre class="r"><code>result_students &lt;- cbind(students_matrix,total_grade_student)
+
+result_students</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Seleccionando elementos de una matriz</p>
+<p>De la matriz result_students seleccione la fila 1, 3 y 5 y las columnas 2 y 4. Almacene el resultado en una variable de nombre selected_elements e imprima el resultado.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2VsZWN0ZWRfZWxlbWVudHMgPC0gcmVzdWx0X3N0dWRlbnRzW2MoMSwzLDUpLGMoMiw0KV1cblxuc2VsZWN0ZWRfZWxlbWVudHNcbmBgYCJ9 -->
+<pre class="r"><code>selected_elements &lt;- result_students[c(1,3,5),c(2,4)]
+
+selected_elements</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Data frames 5.1. Construya un data frame de nombre students_grades_df utilizando la matriz result_students como parámetro.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudHNfZ3JhZGVzX2RmIDwtIGRhdGEuZnJhbWUocmVzdWx0X3N0dWRlbnRzKVxuXG5zdHVkZW50c19ncmFkZXNfZGZcbmBgYCJ9 -->
+<pre class="r"><code>students_grades_df &lt;- data.frame(result_students)
+
+students_grades_df</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>5.2. Utilice la función subset en students_grades_df para filtrar por la siguiente condición: Que la columna Accounting sea mayor a 80 y que Legal_age sea verdadero.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3Vic2V0KHN0dWRlbnRzX2dyYWRlc19kZiwgc3Vic2V0ID0gQWNjb3VudGluZyA+IDgwICYgTGVnYWxfYWdlID09IDEgKVxuXG5gYGAifQ== -->
+<pre class="r"><code>subset(students_grades_df, subset = Accounting &gt; 80 &amp; Legal_age == 1 )
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Funciones, Condicionales y Bucles</p>
+<p>Construya una función de nombre students_projection que recorra la matriz result_students.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudHNfcHJvamVjdGlvbiA8LSBmdW5jdGlvbihhcmdfbWF0cml4KXtcbiAgZm9yIChyb3dzIGluIDE6bnJvdyhhcmdfbWF0cml4KSl7XG4gICAgZm9yIChjb2xzIGluIDE6KG5jb2woYXJnX21hdHJpeCktMikpe1xuICAgICAgcHJpbnQoYXJnX21hdHJpeFtyb3dzLGNvbHNdKVxuICAgIH1cbiAgfVxufVxuXG5zdHVkZW50c19wcm9qZWN0aW9uKHJlc3VsdF9zdHVkZW50cylcblxuYGBgIn0= -->
+<pre class="r"><code>students_projection &lt;- function(arg_matrix){
+  for (rows in 1:nrow(arg_matrix)){
+    for (cols in 1:(ncol(arg_matrix)-2)){
+      print(arg_matrix[rows,cols])
+    }
+  }
+}
+
+students_projection(result_students)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>6.2.Al recorrer filas y columnas obtendrá el valor de la nota que se encuentra en cada celda de la matriz, con este valor aplique las siguientes condiciones para imprimir un mensaje: 6.2.1. Si la nota es menor o igual a 45 imprima “Student at risk” 6.2.2. Si la nota es mayor a 45 y menor a 61 imprima “Student may be approved” 6.2.3. Si la nota es mayor o igual a 61 imprima “Student approved”</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3R1ZGVudHNfcHJvamVjdGlvbiA8LSBmdW5jdGlvbihhcmdfbWF0cml4KXtcbiAgZm9yIChyb3dzIGluIDE6bnJvdyhhcmdfbWF0cml4KSl7XG4gICAgZm9yIChjb2xzIGluIDE6KG5jb2woYXJnX21hdHJpeCktMikpe1xuICAgICAgaWYgKGFyZ19tYXRyaXhbcm93cyxjb2xzXSA8PSA0NSl7XG4gICAgICAgIHByaW50KHBhc3RlKFwiU3R1ZGVudCBhdCByaXNrISBcIixhcmdfbWF0cml4W3Jvd3MsY29sc10pKVxuICAgICAgfVxuICAgICAgaWYgKGFyZ19tYXRyaXhbcm93cyxjb2xzXT40NSAmIGFyZ19tYXRyaXhbcm93cyxjb2xzXTw2MSl7XG4gICAgICAgIHByaW50KHBhc3RlKFwiU3R1ZGVudCBtYXkgYmUgYXBwcm92ZWQhIFwiLGFyZ19tYXRyaXhbcm93cyxjb2xzXSkpXG4gICAgICB9XG4gICAgICBpZiAoYXJnX21hdHJpeFtyb3dzLGNvbHNdID49IDYxKXtcbiAgICAgICAgcHJpbnQocGFzdGUoXCJTdHVkZW50IGFwcHJvdmVkISBcIixhcmdfbWF0cml4W3Jvd3MsY29sc10pKVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuXG5zdHVkZW50c19wcm9qZWN0aW9uKHJlc3VsdF9zdHVkZW50cylcblxuYGBgIn0= -->
+<pre class="r"><code>students_projection &lt;- function(arg_matrix){
+  for (rows in 1:nrow(arg_matrix)){
+    for (cols in 1:(ncol(arg_matrix)-2)){
+      if (arg_matrix[rows,cols] &lt;= 45){
+        print(paste(&quot;Student at risk! &quot;,arg_matrix[rows,cols]))
+      }
+      if (arg_matrix[rows,cols]&gt;45 &amp; arg_matrix[rows,cols]&lt;61){
+        print(paste(&quot;Student may be approved! &quot;,arg_matrix[rows,cols]))
+      }
+      if (arg_matrix[rows,cols] &gt;= 61){
+        print(paste(&quot;Student approved! &quot;,arg_matrix[rows,cols]))
+      }
+    }
+  }
+}
+
+students_projection(result_students)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Pruebe la función haciendo un llamado a la misma.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5zdHVkZW50c19wcm9qZWN0aW9uKHJlc3VsdF9zdHVkZW50cylcblxuYGBgIn0= -->
+<pre class="r"><code>
+students_projection(result_students)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpSZWdpc3Ryb3MgZGUgbm90YXMgZGUgNSBlc3R1ZGlhbnRlczoNCnN0dWRlbnRfMSA9IHsgNTAuNCwgNjIuMywgOTIuMSwgNzcuNiwgVFJVRSB9DQpzdHVkZW50XzIgPSB7IDQxLjcsIDg3LjksIDc1LjMsIDcyLjQsIEZBTFNFIH0NCnN0dWRlbnRfMyA9IHsgMzAuMywgNjcuOCwgNjkuMywgNzEuMiwgRkFMU0UgfQ0Kc3R1ZGVudF80ID0geyA2NS40LCA4NS4xLCA5Mi4zLCA5Ni44LCBUUlVFIH0NCnN0dWRlbnRfNSA9IHsgNzAuNCwgODguMiwgOTUuMiwgOTAuNywgVFJVRSB9DQoNCg0KVmVjdG9yZXMgeSBtYXRyaWNlczoNCjEuMS4gQ3JlZSB1biB2ZWN0b3IgcG9yIGNhZGEgZXN0dWRpYW50ZSBxdWUgYWxtYWNlbmUgbG9zIDUgcmVnaXN0cm9zDQpgYGB7cn0NCnN0dWRlbnRfMSA8LSBjKDUwLjQsIDYyLjMsIDkyLjEsIDc3LjYsIFRSVUUpDQpzdHVkZW50XzIgPC0gYyg0MS43LCA4Ny45LCA3NS4zLCA3Mi40LCBGQUxTRSkNCnN0dWRlbnRfMyA8LSBjKDMwLjMsIDY3LjgsIDY5LjMsIDcxLjIsIEZBTFNFKQ0Kc3R1ZGVudF80IDwtIGMoNjUuNCwgODUuMSwgOTIuMywgOTYuOCwgVFJVRSkNCnN0dWRlbnRfNSA8LSBjKDcwLjQsIDg4LjIsIDk1LjIsIDkwLjcsIFRSVUUpDQoNCnN0dWRlbnRfMQ0Kc3R1ZGVudF8yDQpzdHVkZW50XzMNCnN0dWRlbnRfNA0Kc3R1ZGVudF81DQoNCg0KDQpgYGANCjEuMi4gQ3JlZSBlbCB2ZWN0b3Igc3R1ZGVudHNfdmVjdG9yLCBzdXMgZWxlbWVudG9zIHNlcsOhbiBjYWRhIHVubyBkZSBsb3MgdmVjdG9yZXMgY3JlYWRvcw0KYW50ZXJpb3JtZW50ZQ0KYGBge3J9DQpzdHVkZW50c192ZWN0b3IgPC0gYyhzdHVkZW50XzEsIHN0dWRlbnRfMiwgc3R1ZGVudF8zLCBzdHVkZW50XzQsIHN0dWRlbnRfNSkNCg0Kc3R1ZGVudHNfdmVjdG9yDQoNCmBgYA0KDQpDb25zdHJ1eWEgdW5hIG1hdHJpeiBkZSBub21icmUgc3R1ZGVudHNfbWF0cml4IHF1ZSByZWNpYmEgY29tbyBwYXLDoW1ldHJvDQpzdHVkZW50c192ZWN0b3IuDQpgYGB7cn0NCnN0dWRlbnRzX21hdHJpeCA8LSBtYXRyaXgoc3R1ZGVudHNfdmVjdG9yLCBucm93ID0gNSwgYnlyb3cgPSBUUlVFKQ0KDQpzdHVkZW50c19tYXRyaXgNCmBgYA0KDQpOb21icmFkbyBkZSB1bmEgbWF0cml6DQoyLjEuQ3JlZSBsb3MgdmVjdG9yZXMgbmFtZV9zdHVkZW50cyB5IG5hbWVfY291cnNlc19sZWdhbF9hZ2UgY29uIGxvcyBzaWd1aWVudGVzIA0KdmFsb3JlczoNCiAgICBuYW1lX3N0dWRlbnRzID0geyDigJxMaWx5IEJyb3du4oCdLCDigJxEYXZpcyBNb29yZeKAnSwg4oCcU3VzYW4gVGF5bG9y4oCdLCDigJxNaWtlIEpvbmVz4oCdLA0KICAgIOKAnFRvbSBIaWxs4oCdIH0NCiAgICBuYW1lX2NvdXJzZXNfbGVnYWxfYWdlID0geyDigJxUSUPigJ0sIOKAnEFjY291bnRpbmfigJ0sIOKAnFBzeWNob2xvZ3nigJ0sIOKAnEV0aGljc+KAnSwNCiAgICDigJxMZWdhbF9hZ2XigJ0gfQ0KYGBge3J9DQoNCm5hbWVfc3R1ZGVudHMgPC0gYygiTGlseSBCcm93biIsICJEYXZpcyBNb29yZSIsICJTdXNhbiBUYXlsb3IiLCAiTWlrZSBKb25lcyIsIlRvbSBIaWxsIikNCm5hbWVfY291cnNlc19sZWdhbF9hZ2UgPC0gYygiVElDIiwgIkFjY291bnRpbmciLCAiUHN5Y2hvbG9neSIsICJFdGhpY3MiLCAiTGVnYWxfYWdlIikNCg0KbmFtZV9zdHVkZW50cw0KbmFtZV9jb3Vyc2VzX2xlZ2FsX2FnZQ0KDQpgYGANCg0KMi4yLiBVdGlsaWNlIGVzdG9zIHZlY3RvcmVzIHBhcmEgY3JlYXIgZWwgbm9tYnJhZG8gZGUgZmlsYXMgeSBjb2x1bW5hcyBkZSBsYSBtYXRyaXoNCnN0dWRlbnRzX3ZlY3Rvci4gRW4gbGFzIGZpbGFzIGRlYmVuIGFwYXJlY2VyIGxvcyBlc3R1ZGlhbnRlcyB5IGVuIGNvbHVtbmFzIGxvcyBjdXJzb3MgeQ0Kc2kgZXMgbWF5b3IgZGUgZWRhZC4NCmBgYHtyfQ0KY29sbmFtZXMoc3R1ZGVudHNfbWF0cml4KSA8LSBuYW1lX2NvdXJzZXNfbGVnYWxfYWdlDQpyb3duYW1lcyhzdHVkZW50c19tYXRyaXgpIDwtIG5hbWVfc3R1ZGVudHMNCg0Kc3R1ZGVudHNfbWF0cml4DQoNCg0KYGBgDQoNClJvd1N1bXMsIGNiaW5kDQoNCjMuMS4gQ3JlZSBlbCB2ZWN0b3IgdG90YWxfZ3JhZGVfc3R1ZGVudCBxdWUgY29udGVuZ2EgbGEgc3VtYXRvcmlhIGRlIHRvZGFzIGxhcyBub3RhcyBwb3INCmNhZGEgZXN0dWRpYW50ZSwgdXRpbGljZSBsYSBmdW5jacOzbiByb3dTdW0gcGFyYSBoYWNlcmxvLCB0b21lIGVuIGN1ZW50YSBxdWUgc29sbyBkZWJlDQpjb25zaWRlcmFyIGxhcyBwcmltZXJhIDQgY29sdW1uYXMsIHBvcnF1ZSBsYSDDumx0aW1hIGNvcnJlc3BvbmRlIGEgbGEgbWF5b3LDrWEgZGUNCmVkYWQuDQpgYGB7cn0NCnN0dWRlbnRzX21hdHJpeFsxLDE6NF0NCnN0dWRlbnRzX21hdHJpeFsyLDE6NF0NCnN0dWRlbnRzX21hdHJpeFszLDE6NF0NCnN0dWRlbnRzX21hdHJpeFs0LDE6NF0NCnN0dWRlbnRzX21hdHJpeFs1LDE6NF0NCg0Kc3R1ZGVudHNfbWF0cml4WywxOjRdDQpyb3dTdW1zKHN0dWRlbnRzX21hdHJpeFssMTo0XSkNCg0KdG90YWxfZ3JhZGVfc3R1ZGVudCA8LSByb3dTdW1zKHN0dWRlbnRzX21hdHJpeFssMTo0XSkNCg0KdG90YWxfZ3JhZGVfc3R1ZGVudA0KYGBgDQoNCjMuMi4gUGVndWUgZWwgdmVjdG9yIHRvdGFsX2dyYWRlX3N0dWRlbnQgY29uIGxhIG1hdHJpeiBzdHVkZW50c19tYXRyaXggcG9yIG1lZGlvIGRlIGxhDQpmdW5jacOzbiBjYmluZCB5IGFzaWduZSBlbCByZXN1bHRhZG8gYSB1bmEgbnVldmEgbWF0cml6IGRlIG5vbWJyZSByZXN1bHRfc3R1ZGVudHMuDQpgYGB7cn0NCnJlc3VsdF9zdHVkZW50cyA8LSBjYmluZChzdHVkZW50c19tYXRyaXgsdG90YWxfZ3JhZGVfc3R1ZGVudCkNCg0KcmVzdWx0X3N0dWRlbnRzDQpgYGANCg0KU2VsZWNjaW9uYW5kbyBlbGVtZW50b3MgZGUgdW5hIG1hdHJpeg0KDQpEZSBsYSBtYXRyaXogcmVzdWx0X3N0dWRlbnRzIHNlbGVjY2lvbmUgbGEgZmlsYSAxLCAzIHkgNSB5IGxhcyBjb2x1bW5hcyAyIHkgNC4gQWxtYWNlbmUgZWwNCnJlc3VsdGFkbyBlbiB1bmEgdmFyaWFibGUgZGUgbm9tYnJlIHNlbGVjdGVkX2VsZW1lbnRzIGUgaW1wcmltYSBlbCByZXN1bHRhZG8uDQpgYGB7cn0NCnNlbGVjdGVkX2VsZW1lbnRzIDwtIHJlc3VsdF9zdHVkZW50c1tjKDEsMyw1KSxjKDIsNCldDQoNCnNlbGVjdGVkX2VsZW1lbnRzDQpgYGANCg0KRGF0YSBmcmFtZXMNCjUuMS4gQ29uc3RydXlhIHVuIGRhdGEgZnJhbWUgZGUgbm9tYnJlIHN0dWRlbnRzX2dyYWRlc19kZiB1dGlsaXphbmRvIGxhIG1hdHJpeg0KcmVzdWx0X3N0dWRlbnRzIGNvbW8gcGFyw6FtZXRyby4NCmBgYHtyfQ0Kc3R1ZGVudHNfZ3JhZGVzX2RmIDwtIGRhdGEuZnJhbWUocmVzdWx0X3N0dWRlbnRzKQ0KDQpzdHVkZW50c19ncmFkZXNfZGYNCmBgYA0KDQo1LjIuIFV0aWxpY2UgbGEgZnVuY2nDs24gc3Vic2V0IGVuIHN0dWRlbnRzX2dyYWRlc19kZiBwYXJhIGZpbHRyYXIgcG9yIGxhIHNpZ3VpZW50ZSBjb25kaWNpw7NuOg0KUXVlIGxhIGNvbHVtbmEgQWNjb3VudGluZyBzZWEgbWF5b3IgYSA4MCB5IHF1ZSBMZWdhbF9hZ2Ugc2VhIHZlcmRhZGVyby4NCmBgYHtyfQ0Kc3Vic2V0KHN0dWRlbnRzX2dyYWRlc19kZiwgc3Vic2V0ID0gQWNjb3VudGluZyA+IDgwICYgTGVnYWxfYWdlID09IDEgKQ0KDQpgYGANCg0KRnVuY2lvbmVzLCBDb25kaWNpb25hbGVzIHkgQnVjbGVzDQoNCkNvbnN0cnV5YSB1bmEgZnVuY2nDs24gZGUgbm9tYnJlIHN0dWRlbnRzX3Byb2plY3Rpb24gcXVlIHJlY29ycmEgbGEgbWF0cml6DQpyZXN1bHRfc3R1ZGVudHMuDQpgYGB7cn0NCnN0dWRlbnRzX3Byb2plY3Rpb24gPC0gZnVuY3Rpb24oYXJnX21hdHJpeCl7DQogIGZvciAocm93cyBpbiAxOm5yb3coYXJnX21hdHJpeCkpew0KICAgIGZvciAoY29scyBpbiAxOihuY29sKGFyZ19tYXRyaXgpLTIpKXsNCiAgICAgIHByaW50KGFyZ19tYXRyaXhbcm93cyxjb2xzXSkNCiAgICB9DQogIH0NCn0NCg0Kc3R1ZGVudHNfcHJvamVjdGlvbihyZXN1bHRfc3R1ZGVudHMpDQoNCmBgYA0KDQo2LjIuQWwgcmVjb3JyZXIgZmlsYXMgeSBjb2x1bW5hcyBvYnRlbmRyw6EgZWwgdmFsb3IgZGUgbGEgbm90YSBxdWUgc2UgZW5jdWVudHJhIGVuIGNhZGENCmNlbGRhIGRlIGxhIG1hdHJpeiwgY29uIGVzdGUgdmFsb3IgYXBsaXF1ZSBsYXMgc2lndWllbnRlcyBjb25kaWNpb25lcyBwYXJhIGltcHJpbWlyIHVuDQptZW5zYWplOg0KICA2LjIuMS4gU2kgbGEgbm90YSBlcyBtZW5vciBvIGlndWFsIGEgNDUgaW1wcmltYSAiU3R1ZGVudCBhdCByaXNrIg0KICA2LjIuMi4gU2kgbGEgbm90YSBlcyBtYXlvciBhIDQ1IHkgbWVub3IgYSA2MSBpbXByaW1hIOKAnFN0dWRlbnQgbWF5IGJlIGFwcHJvdmVk4oCdDQogIDYuMi4zLiBTaSBsYSBub3RhIGVzIG1heW9yIG8gaWd1YWwgYSA2MSBpbXByaW1hIOKAnFN0dWRlbnQgYXBwcm92ZWTigJ0NCg0KYGBge3J9DQpzdHVkZW50c19wcm9qZWN0aW9uIDwtIGZ1bmN0aW9uKGFyZ19tYXRyaXgpew0KICBmb3IgKHJvd3MgaW4gMTpucm93KGFyZ19tYXRyaXgpKXsNCiAgICBmb3IgKGNvbHMgaW4gMToobmNvbChhcmdfbWF0cml4KS0yKSl7DQogICAgICBpZiAoYXJnX21hdHJpeFtyb3dzLGNvbHNdIDw9IDQ1KXsNCiAgICAgICAgcHJpbnQocGFzdGUoIlN0dWRlbnQgYXQgcmlzayEgIixhcmdfbWF0cml4W3Jvd3MsY29sc10pKQ0KICAgICAgfQ0KICAgICAgaWYgKGFyZ19tYXRyaXhbcm93cyxjb2xzXT40NSAmIGFyZ19tYXRyaXhbcm93cyxjb2xzXTw2MSl7DQogICAgICAgIHByaW50KHBhc3RlKCJTdHVkZW50IG1heSBiZSBhcHByb3ZlZCEgIixhcmdfbWF0cml4W3Jvd3MsY29sc10pKQ0KICAgICAgfQ0KICAgICAgaWYgKGFyZ19tYXRyaXhbcm93cyxjb2xzXSA+PSA2MSl7DQogICAgICAgIHByaW50KHBhc3RlKCJTdHVkZW50IGFwcHJvdmVkISAiLGFyZ19tYXRyaXhbcm93cyxjb2xzXSkpDQogICAgICB9DQogICAgfQ0KICB9DQp9DQoNCnN0dWRlbnRzX3Byb2plY3Rpb24ocmVzdWx0X3N0dWRlbnRzKQ0KDQpgYGANCg0KUHJ1ZWJlIGxhIGZ1bmNpw7NuIGhhY2llbmRvIHVuIGxsYW1hZG8gYSBsYSBtaXNtYS4NCmBgYHtyfQ0KDQpzdHVkZW50c19wcm9qZWN0aW9uKHJlc3VsdF9zdHVkZW50cykNCg0KYGBgDQoNCg==</div>
 
 
 
